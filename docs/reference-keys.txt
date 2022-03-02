@@ -34,6 +34,9 @@ lem:unlabeled-div-54
 exm:unlabeled-div-56
 exm:unlabeled-div-57
 exm:unlabeled-div-58
+lem:unlabeled-div-59
+prp:unlabeled-div-61
+prp:unlabeled-div-63
 teoría-del-interés
 ayudantía
 ejercicios-interés-simple
