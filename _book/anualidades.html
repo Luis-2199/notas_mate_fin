@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 2 Anualidades | Matemáticas Financieras</title>
+  <meta name="description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 2 Anualidades | Matemáticas Financieras" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 2 Anualidades | Matemáticas Financieras" />
+  
+  <meta name="twitter:description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  
+
+<meta name="author" content="Eduardo Selim Martinez Mayorga" />
+
+
+<meta name="date" content="2022-03-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas Financieras</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Teoría del interés</a><ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#ayudantía"><i class="fa fa-check"></i><b>1.1</b> Ayudantía</a><ul>
+<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#ejercicios-interés-simple"><i class="fa fa-check"></i><b>1.1.1</b> Ejercicios (interés simple)</a></li>
+<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#ejercicios-interés-compuesto"><i class="fa fa-check"></i><b>1.1.2</b> Ejercicios (interés compuesto)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#clase"><i class="fa fa-check"></i><b>1.2</b> Clase</a><ul>
+<li class="chapter" data-level="1.2.1" data-path="index.html"><a href="index.html#ejercicios-de-clase"><i class="fa fa-check"></i><b>1.2.1</b> Ejercicios de Clase</a></li>
+<li class="chapter" data-level="1.2.2" data-path="index.html"><a href="index.html#ejercicios"><i class="fa fa-check"></i><b>1.2.2</b> Ejercicios</a></li>
+</ul></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#ayudantía-1"><i class="fa fa-check"></i><b>1.3</b> Ayudantía</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#clase-1"><i class="fa fa-check"></i><b>1.4</b> Clase</a></li>
+<li class="chapter" data-level="1.5" data-path="index.html"><a href="index.html#ayudantía-2"><i class="fa fa-check"></i><b>1.5</b> Ayudantía</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="index.html"><a href="index.html#ejercicios-fuerza-de-interés"><i class="fa fa-check"></i><b>1.5.1</b> Ejercicios (Fuerza de Interés)</a></li>
+</ul></li>
+<li class="chapter" data-level="1.6" data-path="index.html"><a href="index.html#clase-2"><i class="fa fa-check"></i><b>1.6</b> Clase</a></li>
+<li class="chapter" data-level="1.7" data-path="index.html"><a href="index.html#ayudantía-3"><i class="fa fa-check"></i><b>1.7</b> Ayudantía</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="anualidades.html"><a href="anualidades.html"><i class="fa fa-check"></i><b>2</b> Anualidades</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemáticas Financieras</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="anualidades" class="section level1">
+<h1><span class="header-section-number">Capítulo 2</span> Anualidades</h1>
+<p>Considere la siguiente transacción:</p>
+<p>Se deposita <span class="math inline">\(\$1\)</span> cada periodo durante <span class="math inline">\(n\)</span> periodos, i.e, hay <span class="math inline">\(n\)</span> depósitos de <span class="math inline">\(\$1\)</span>.</p>
+<ol style="list-style-type: decimal">
+<li>Supongamos interés compuesto, ¿cuánto dinero acumulado se tiene justo después del último depósito?</li>
+</ol>
+<center>
+<img src="images/25.jpg" />
+</center>
+<ul>
+<li>Justo después del <span class="math inline">\(2\text{°}\)</span> depósito, ¿cuánto dinero acumulado hay?</li>
+</ul>
+<p><span class="math inline">\(1(1+i)^1+\underbrace{1}_{\scriptstyle \text{peso adicional}}\)</span></p>
+<ul>
+<li>Justo después del <span class="math inline">\(3\text{°}\)</span> depósito, ¿cuánto dinero tenemos?</li>
+</ul>
+<p><span class="math inline">\(\underbrace{\left[1(1+i)^1 + 1 \right]}_{\scriptstyle \text{Ya lo teníamos}}(1+i) + \underbrace{1}_{\scriptstyle \text{peso adicional}} = (1+i)^2 +(1+i) +1\)</span></p>
+<ul>
+<li>Justo después del <span class="math inline">\(4\text{°}\)</span> depósito, ¿cuánto?</li>
+</ul>
+<p><span class="math inline">\(\left[(1+i)^2 + (1+i) +1 \right](1+i) +1 = (1+i)^3 +(1+i)^2 + (1+i) +1\)</span></p>
+<p>Inductivamente, justo después del <span class="math inline">\(n\text{-ésimo}\)</span> depósito, ¿cuánto dinero tenemos?
+<span class="math display">\[=\underbrace{(1+i)^{n-1}+(1+i)^{n-2}+\ldots+(1+i) +1}_{\scriptstyle n\, \text{sumandos}} = X\]</span></p>
+<ul>
+<li>¿Cuánto dinero hay un periodo después del último depósito?</li>
+</ul>
+<p><span class="math display">\[\begin{align*}
+&amp;X(1+i) = Y\\
+Y &amp;= (1+i)\left[(1+i)^{n-1} + (1+i)^{n-2}+ \ldots + (1+i) +1 \right] \\
+&amp;= \underbrace{(1+i)^n + (1+i)^{n-1} + \ldots + (1+i)}_{\scriptstyle n\, \text{sumandos}}
+\end{align*}\]</span></p>
+<ul>
+<li>Si en vez de esa maroma de hacer <span class="math inline">\(n\)</span> depósitos y simplemente hacer <strong>un único depósito</strong> en la misma fecha del <span class="math inline">\(1\text{°}\)</span> pago y obtener el mismo valor acumulado.</li>
+</ul>
+<p>¿De cuánto tendría que ser este depósito?</p>
+<p><span class="math display">\[\begin{align*}
+&amp;W\,\text{debe satisfacer:} \: W(1+i)^n = Y\\
+&amp;\text{ó bien} \, W(1+i)^{n-1} = X \: \Longrightarrow \: W=Y(1+i)^{-n}\\
+&amp; W = \left[(1+i)^n + (1+i)^{n-1}+\ldots + (1+i) \right] (1+i)^{-n}\\
+&amp;= \underbrace{1+ (1+i)^{-1} + \ldots + (1+i)^{-(n-1)}}_{\scriptstyle n\, \text{sumandos}} 
+\end{align*}\]</span></p>
+<ul>
+<li>Si en vez de esa maroma de hacer <span class="math inline">\(n\)</span> depósitos y simplemente hacer <strong>un único depósito</strong> un periodo antes de la fecha del <span class="math inline">\(1\text{°}\)</span> pago.</li>
+</ul>
+<p>¿De cuánto debe ser dicho depósito?</p>
+<p><span class="math display">\[\begin{align*}
+&amp;Z\,\text{debe satisfacer:}\: Z(1+i)^n=X \: \text{ó bien} \: Z(1+i)^{n+1} = Y\\
+&amp; \Longrightarrow \: Z= X(1+i)^{-n} = \left[(1+i)^{n-1} + (1+i)^{n-2} + \ldots + (1+i) + 1 \right](1+i)^{-n}\\
+&amp;\hspace{1.5cm} = (1+i)^{-1} +(1+i)^{-2} +\ldots +(1+i)^{-(n-1)} + (1+i)^{-n} = (*) 
+\end{align*}\]</span></p>
+<p><strong>Notación</strong></p>
+<p><span class="math inline">\((*)=\underbrace{V+V^2+\ldots + V^{n-1}+V^n}_{\scriptstyle n\, \text{sumandos}}\)</span></p>
+<p><strong>En resumen</strong></p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(X=(1+i)^{n-1}+(1+i)^{n-2}+\ldots+(1+i) +1 \: :\)</span> <span style="color: red;"><span class="math inline">\(\require{enclose}s_{\enclose{actuarial}{n}i}\)</span></span></p></li>
+<li><p><span class="math inline">\(Y = (1+i)^n + (1+i)^{n-1}+\ldots+(1+i) \: \: :\)</span> <span style="color: red;"><span class="math inline">\(\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}\)</span></span></p></li>
+<li><p><span class="math inline">\(W = 1 + V + V^2 + \ldots + V^{n-1} \: :\)</span> <span style="color: red;"><span class="math inline">\(\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i}\)</span></span></p></li>
+<li><p><span class="math inline">\(Z = V+V^2+\ldots +V^n \: :\)</span> <span style="color: red;"><span class="math inline">\(\require{enclose}a_{\enclose{actuarial}{n}i}\)</span></span></p></li>
+</ol>
+<p><span style="color: red;"><span class="math inline">\(i \: \longrightarrow \: \text{tasa efectiva de interés por periodo}\\ n \: \longrightarrow \: \text{número de pagos}\)</span></span></p>
+<p><span class="math inline">\(\require{enclose}s_{\enclose{actuarial}{n}i}, \; \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}, \; \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i}, \;\require{enclose}a_{\enclose{actuarial}{n}i}, \; ; n \in \mathbb{N}\)</span></p>
+<p><strong><span style="color: blue;">Ejercicios</span></strong></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Se sabe que una inversión de <span class="math inline">\(\$500\)</span> se incrementará a <span class="math inline">\(\$4000\)</span> al final de <span class="math inline">\(30\)</span> años. Encontrar la suma de valores presentes de 3 pagos de <span class="math inline">\(\$10,000\)</span> cada uno, los cuales se harán al final de <span class="math inline">\(20\)</span>, <span class="math inline">\(40\)</span> y <span class="math inline">\(60\)</span> años, con la tasa del ejercicio anterior.</li>
+</ol>
+<center>
+<img src="images/26.jpg" />
+</center>
+<p><span class="math display">\[\begin{align*}
+\Longrightarrow \: &amp;500(1+i)^{30} = 4000 \: \Longrightarrow \: (1+i)^{30} = 8 \: \Longrightarrow \: i = \ldots \\
+x &amp;= 10,000 V^20 + 10,000 V^40 +10,000 V^60 \\
+&amp;= 10,000\left[(1+i)^{-20} + (1+i)^{-40} + (1+i)^{-60} \right]\\
+&amp;= \underline{10,000\left[8^{-2/3} + 8^{-4/3} + 8^{-2} \right]}\\
+&amp;\hfill \\
+&amp;\text{donde} \: 1+i = 8^{1/30} 
+\end{align*}\]</span></p>
+<ol start="3" style="list-style-type: decimal">
+<li></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>Encuentre <span class="math inline">\(d_s\)</span> si la tasa de interés simple es <span class="math inline">\(10\%\)</span></p></li>
+<li><p>Encuentre <span class="math inline">\(d_s\)</span> si la tasa de descuento simple es <span class="math inline">\(10\%\)</span></p></li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p><span class="math display">\[\begin{align*}
+a(t)&amp; = 1+0.1t\\
+ds&amp; = \frac{a(5)-a(4)}{a(5)}\\
+&amp; = \frac{1+0.1(5) -1 -0.1(4)}{1+0.1(4)}\\
+&amp; = \underline{\frac{0.1}{1.5}}
+\end{align*}\]</span></p></li>
+<li><p>Análogo pero con tasa de descuento.</p></li>
+</ol>
+<div class="lemma">
+<p><span id="lem:unlabeled-div-59" class="lemma"><strong>Lema 2.1  </strong></span>Para <span class="math inline">\(x\in \mathbb{R}, \, k, \, n \in \mathbb{N}_+, \, k&lt;n\)</span>. Sea <span class="math inline">\(S= x^k + x^{k+1} + \ldots + x^n\)</span>, entonces
+<span class="math display">\[\boxed{S = \frac{x^k-x^{n+1}}{1-x}}\]</span>
+<span style="color: blue;"><span class="math inline">\(\cdot\)</span> Las fórmulas de las anualidades se deducen de este lema.</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-60" class="proof"><em>Demostración</em>. </span><span class="math display">\[\begin{align*}
+&amp; S = x^k + x^{k+1} + \ldots + x^n \\
+&amp; xS = \hspace{0.5cm} x^{k+1} + \ldots + x^n + x^{n+1} \\
+&amp; \Longrightarrow S-xS = x^k -x^{n+1} \\
+&amp; \Longrightarrow S = \frac{x^k-x^{n+1}}{1-x} 
+\end{align*}\]</span></p>
+</div>
+<center>
+<img src="images/27.jpg" />
+</center>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-61" class="proposition"><strong>Proposición 2.1  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Si <span class="math inline">\(i \neq 0\)</span>, entonces
+<span class="math inline">\(\boxed{\require{enclose}a_{\enclose{actuarial}{n}i} = \frac{1-V^n}{i}} = \frac{1-(1+i)^{-n}}{i}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i \neq 0\)</span>, entonces <span class="math inline">\(\boxed{\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} = \frac{1-V^n}{d}} = \frac{1-(1+i)^{-n}}{d}\)</span>, donde <span class="math inline">\(d \sim i\)</span></p></li>
+<li><p>Si <span class="math inline">\(i \neq 0\)</span>, entonces <span class="math inline">\(\boxed{\require{enclose}s_{\enclose{actuarial}{n}i} = \frac{(1+i)^n -1}{i}}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i \neq 0\)</span>, entonces <span class="math inline">\(\boxed{\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} = \frac{(1+i)^n -1}{d}}\)</span>, con <span class="math inline">\(d\sim i\)</span></p></li>
+<li><p>Si <span class="math inline">\(i = 0\)</span>, entonces <span class="math inline">\(\require{enclose}a_{\enclose{actuarial}{n}i} = \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} = \require{enclose}s_{\enclose{actuarial}{n}i} = \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}\)</span></p></li>
+</ol>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-62" class="proof"><em>Demostración</em>. </span><span class="math display">\[\begin{align*}
+1) \quad \require{enclose}a_{\enclose{actuarial}{n}i} &amp;= V + V^2 + \ldots + V^n = V^1 + V^2 + \ldots + V^n \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{V^1 - V^{n+1}}{1-V}\\
+&amp;= \frac{V\left(1-V^n\right)}{V\left[(1+i) -1\right]} = \frac{1-V^n}{i}\\
+&amp;\hfill \\
+2) \quad \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} &amp;= 1 + V + V^2 + \ldots + V^{n-1} = V^0 + V + V^2 + \ldots + V^{n-1} \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{V^0 - V^{n-1+1}}{1-V}\\
+&amp;= \frac{1-V^n}{1-V} \: \ldots \: (\ddot\smile) \quad \text{pero} \, d\sim i, \, (1-d)^{-1} = 1+i \Longrightarrow 1-d = \frac{1}{1+i}\\
+\Longrightarrow \: &amp;d = 1 - \frac{1}{1+i} = 1 - V \: \ldots \: (*)\\
+\text{Sust.}\, &amp;(\ddot\smile) \, \text{en} \, (*)\\
+\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} &amp;= \frac{1-V^n}{d}\\
+&amp;\hfill \\
+3) \quad \require{enclose}s_{\enclose{actuarial}{n}i} &amp;= 1+(1+i) + \ldots + (1+i)^{n-1} = (1+i)^0 + (1+i)^1 + \ldots + (1+i)^{n-1}\\
+&amp; \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{(1+i)^0 - (1+i)^{n-1+1}}{1-(1+i)} = \frac{1-(1+i)^n}{-i} = \frac{(1+i)^n - 1}{i}\\
+4) \quad \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} &amp;= (1+i) + (1+i)^2 + \ldots +(1+i)^n \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{(1+i)^1 - (1+i)^{n+1}}{1-(1+i)} \\
+&amp; = \frac{-(1+i)\left[-1 + (1+i)^n \right] }{-i} \: \Longrightarrow \: \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} = \frac{(1+i)\left[(1+i)^n - 1\right] }{i} \: \ldots \: (&lt;3)\\
+\text{Pero como} &amp;\: i\sim d, \, (1+i)=(1-d)^{-1} \: \Longrightarrow \: d=1- \frac{1}{1+i} = \frac{1+i-1}{1+i} = \frac{i}{1+i}\\
+\Longrightarrow\: \frac{1}{d} &amp;= \frac{1+i}{i} \: \ldots \: (&lt;/3)\\
+\text{Sust.}\, (&lt;/3) \, &amp;\text{en} \, (&lt;3)\\
+\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} &amp;= \frac{1}{d}\left[(1+i)^n - 1 \right] = \frac{(1+i)^n-1}{d}\\ 
+&amp;\hfill\\
+5) \quad \require{enclose}s_{\enclose{actuarial}{n}i} &amp;= 1 + (1+i) \ldots + (1+i)^{n-1} = 1+(1+0) + \ldots + (1+0)^{n-1}\\
+&amp;= 1+1\ldots+1=n\\
+\require{enclose}a_{\enclose{actuarial}{n}i} &amp;= V+V^2+\ldots+V^n = (1+i)^{-1} + (1+i)^{-2} +\ldots + (1+i)^{-n}\\
+&amp;\mathrel{\stackrel{\scriptstyle i=1}{=}} 1^{-1} + 1^{-2} + \ldots + 1^{-n} = 1 + \ldots + 1=n
+\end{align*}\]</span></p>
+</div>
+<p>Ahora</p>
+<p><span class="math display">\[\begin{align*}
+\require{enclose} r(Ga)_{\enclose{actuarial}{n}i} &amp;= \underbrace{1V + (1+r)V^2 + (1+r)^2V^3 + \ldots + (1+r)^{n-2}V^{n-1} + (1+r)^{n-1}V^n}_{\scriptstyle n \, \text{sumandos}} \\
+&amp;= V\left[ 1+(1+r)V + [(1+r)V]^2 + \ldots + [(1+r)V]^{n-2} + [(1+r)V]^{n-1}\right]\\
+&amp; \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} V\left[\frac{[(1+r)V]^0 - [(1+r)V]^{n-1+1}}{1-(1+r)V} \right] \: \longleftarrow \: x = (1+r)V\\
+&amp;= V\left[\frac{1-(1+r)^nV^n}{1-(1+r)V} \right] = \frac{1-(1+r)^nV^n}{V^{-1}[1-(1+r)V]} = \frac{1-(1+r)^nV^n}{V^{-1}-(1+r)} \\
+&amp; = \frac{1-(1+r)^n V^n}{(1+i)-(1+r)} = \boxed{\frac{1-\left(\frac{1+r}{1+i} \right)^n }{1-r}, \: i \neq r}\\
+&amp;\hfill\\
+\require{enclose} r(G\ddot{s})_{\enclose{actuarial}{n}i} &amp;\mathrel{\stackrel{\scriptstyle \text{Def}}{=}} (1+r)^{n-1}(1+i) + (1+r)^{n-2}(1+i)^2 + \ldots + (1+r)^2(1+i)^{n-2} \\
+&amp;\quad + (1+r)(1+i)^{n-1} + 1(1+i)^n \\
+&amp;= (1+r)^n \left[\frac{1+i}{1+r} + \left(\frac{1+i}{1+r} \right)^2 + \ldots + \left( \frac{1+i}{1+r} \right)^n  \right] \\
+&amp;\mathrel{\stackrel{\scriptstyle \text{lema}}{=}} (1+r)^n \left[\frac{\left(\frac{1+i}{1+r} \right)^1 - \left( \frac{1+i}{1+r} \right)^{n+1} }{1 - \left(\frac{1+i}{1+r} \right) } \right] \: \longleftarrow \: x = \frac{1+i}{1+r}\\
+&amp; = \frac{(1+r)^n\left( \frac{1+i}{1+r}\right)\left[1 - \left(\frac{1+i}{1+r} \right)^n  \right]  }{\frac{1+r-1-i}{1+r}} = \frac{(1+i)(1+r)^{n-1}\left[1 - \frac{(1+i)^n}{(1+r)^n}  \right] }{\frac{r-i}{1+r}}\\
+&amp;= \frac{(1+i)(1+r)^n\left[1 - \frac{(1+i)^n}{(1+r)^n} \right] }{r-i} = \frac{(1+i)\left[(1+r)^n - (1+i)^n \right] }{r-i}\\
+&amp; = \boxed{\frac{(1+i)^n - (1+r)^n}{\frac{i-r}{1+i}}}
+\end{align*}\]</span></p>
+<center>
+<img src="images/28.jpg" />
+</center>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-63" class="proposition"><strong>Proposición 2.2  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Si <span class="math inline">\(i\neq r, \:\require{enclose} r(Ga)_{\enclose{actuarial}{n}i} = \frac{1- \left(\frac{1+r}{1+i} \right)^n }{i-r}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i\neq r, \: \require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i} = \frac{1- \left(\frac{1+r}{1+i} \right)^n}{\frac{i-r}{1+i}}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i\neq r, \: \require{enclose} r(Gs)_{\enclose{actuarial}{n}i} = \frac{(1+i)^n - (1+r)^n}{i-r}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i\neq r, \: \require{enclose} r(G\ddot{s})_{\enclose{actuarial}{n}i} = \frac{(1+i)^n - (1+r)^n}{\frac{i-r}{1+i}}\)</span></p></li>
+<li><p>Si <span class="math inline">\(i= r, \: \require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i} = r(Ga)_{\enclose{actuarial}{n}i} = r(Gs)_{\enclose{actuarial}{n}i} = r(G\ddot{s})_{\enclose{actuarial}{n}i} = n\)</span></p></li>
+</ol>
+</div>
+<p><span class="math display">\[\begin{align*}
+\require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i}  &amp;\mathrel{\stackrel{\scriptstyle \text{Def}}{=}} 1 + (1+r)V + (1+r)^2V^2 + \ldots + (1+r)^{n-1}V^{n-1}\\
+&amp;= 1 + \frac{1+r}{1+i} + \left(\frac{1+r}{1+i} \right)^2 + \ldots + \left( \frac{1+r}{1+i} \right)^{n-1}\\
+&amp; \mathrel{\stackrel{\scriptstyle i=r}{=}} 1 + \frac{1+i}{1+i} + \left(\frac{1+i}{1+i} \right)^2 + \ldots + \left(\frac{1+i}{1+i} \right)^n = 1+ \ldots + 1 = n  
+\end{align*}\]</span></p>
+<p><strong><span style="color: blue;">Ejercicios</span></strong></p>
+<ol style="list-style-type: decimal">
+<li>Supóngase que el incremento del dinero para los siguientes <span class="math inline">\(5\)</span> años está dado a una tasa de descuento del <span class="math inline">\(5\%\)</span>.</li>
+</ol>
+<ol style="list-style-type: lower-alpha">
+<li><p>¿Cuál es la cantidad de dinero que se debería invertir hoy para tener <span class="math inline">\(\$23,000\)</span> en <span class="math inline">\(3\)</span> años?</p></li>
+<li><p>Se desea invertir una cantidad <span class="math inline">\(2\)</span> años, para tener <span class="math inline">\(\$23,000\)</span> en <span class="math inline">\(5\)</span> años ¿Cuál es esa cantidad de dinero?</p></li>
+</ol>
+<center>
+<img src="images/29.jpg" />
+</center>
+<center>
+<img src="images/30.jpg" />
+</center>
+<ol start="2" style="list-style-type: decimal">
+<li>Regina garantiza un pago de <span class="math inline">\(5,000\)</span> en <span class="math inline">\(4\)</span> años. Ella necesita <span class="math inline">\(\$4,500\)</span> ahora con el fin de pagar su colegiatura. El mejor préstamos para Regina es una tasa de descuento del <span class="math inline">\(4.9\%\)</span> para pagar la cantidad de <span class="math inline">\(\$5,501.62\)</span> en exactamente <span class="math inline">\(4\)</span> años. Ella puede cubrir <span class="math inline">\(\$5,000\)</span> de su pago garantizado y añadir <span class="math inline">\(\$501.62\)</span> extras al final de los <span class="math inline">\(4\)</span> años. Alternativamente, Regina podría vender su pago garantizado y usar la ganancia para cubrir el total de su colegiatura. ¿En cuánto debería estar dispuesta a vender su pago?</li>
+</ol>
+<center>
+<img src="images/31.jpg" />
+</center>
+<p><span class="math display">\[\begin{align*}
+&amp;\underline{\text{Primero:}}\\
+&amp; \text{¿Cuál es la i que satisface:}\, 4500(1+i)^4 = 5000 \, \text{?}\\
+&amp;\Longrightarrow\: i = \left(\frac{10}{9} \right)^{1/4} = 0.02669 \: \Longrightarrow \: i = 2.2669\%\\
+&amp;\text{¿Cuál es la tasa de descuento equivalente} \, d^* \, \text{?}\\
+&amp;(1-d^*) = 1+i\\
+&amp;d^* = 1-V = 1 - \frac{1}{1+i} = \frac{i}{1+i} = \frac{0.02669}{1.02669} = 0.025\\
+&amp;\Longrightarrow\: \underline{d&gt;d^*} 
+\end{align*}\]</span></p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": false,
+"twitter": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/01-Anualidades.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf", "_main.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"scroll_highlight": true
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

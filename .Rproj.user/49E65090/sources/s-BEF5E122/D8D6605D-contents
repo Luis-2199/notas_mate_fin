@@ -1,0 +1,43 @@
+---
+title: "Prueba, Mate Fin"
+author: "Luis Emmanuel Pimentel Bolívar"
+date: "24/10/2021"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+$$
+\require{enclose}s_{\enclose{actuarial}{n}i}
+$$
+$$
+\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}
+$$
+$$
+\require{enclose}a_{\enclose{actuarial}{n}i}
+$$
+
+$$
+\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i}
+$$
+
+
+$$
+\require{enclose}_{17|}\ddot{a}_{x:\enclose{actuarial}{n}}^{(4)}
+$$
+
+$$
+\require{enclose} r(Ga)_{\enclose{actuarial}{n}i}
+$$
+
+$$
+\require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i}
+$$
+
+$$
+\require{enclose} r(G\ddot{s})_{\enclose{actuarial}{n}i}
+$$
+
+$$
+\require{enclose} r(Gs)_{\enclose{actuarial}{n}i}
+$$

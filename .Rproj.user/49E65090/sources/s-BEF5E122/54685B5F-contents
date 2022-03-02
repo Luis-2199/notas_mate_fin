@@ -1,0 +1,241 @@
+# Anualidades
+
+Considere la siguiente transacción:
+
+Se deposita $\$1$ cada periodo durante $n$ periodos, i.e, hay $n$ depósitos de $\$1$.
+
+1. Supongamos interés compuesto, ¿cuánto dinero acumulado se tiene justo después del último depósito?
+
+<center>
+![](images/25.jpg)
+</center>
+
+* Justo después del $2\text{°}$ depósito, ¿cuánto dinero acumulado hay?
+
+$1(1+i)^1+\underbrace{1}_{\scriptstyle \text{peso adicional}}$
+
+* Justo después del $3\text{°}$ depósito, ¿cuánto dinero tenemos?
+
+$\underbrace{\left[1(1+i)^1 + 1 \right]}_{\scriptstyle \text{Ya lo teníamos}}(1+i) + \underbrace{1}_{\scriptstyle \text{peso adicional}} = (1+i)^2 +(1+i) +1$
+
+* Justo después del $4\text{°}$ depósito, ¿cuánto?
+
+$\left[(1+i)^2 + (1+i) +1 \right](1+i) +1 = (1+i)^3 +(1+i)^2 + (1+i) +1$
+
+Inductivamente, justo después del $n\text{-ésimo}$ depósito, ¿cuánto dinero tenemos?
+$$=\underbrace{(1+i)^{n-1}+(1+i)^{n-2}+\ldots+(1+i) +1}_{\scriptstyle n\, \text{sumandos}} = X$$
+
+* ¿Cuánto dinero hay un periodo después del último depósito?
+
+\begin{align*}
+&X(1+i) = Y\\
+Y &= (1+i)\left[(1+i)^{n-1} + (1+i)^{n-2}+ \ldots + (1+i) +1 \right] \\
+&= \underbrace{(1+i)^n + (1+i)^{n-1} + \ldots + (1+i)}_{\scriptstyle n\, \text{sumandos}}
+\end{align*}
+
+* Si en vez de esa maroma de hacer $n$ depósitos y simplemente hacer **un único depósito** en la misma fecha del $1\text{°}$ pago y obtener el mismo valor acumulado.
+
+¿De cuánto tendría que ser este depósito?
+
+\begin{align*}
+&W\,\text{debe satisfacer:} \: W(1+i)^n = Y\\
+&\text{ó bien} \, W(1+i)^{n-1} = X \: \Longrightarrow \: W=Y(1+i)^{-n}\\
+& W = \left[(1+i)^n + (1+i)^{n-1}+\ldots + (1+i) \right] (1+i)^{-n}\\
+&= \underbrace{1+ (1+i)^{-1} + \ldots + (1+i)^{-(n-1)}}_{\scriptstyle n\, \text{sumandos}} 
+\end{align*}
+
+* Si en vez de esa maroma de hacer $n$ depósitos y simplemente hacer **un único depósito** un periodo antes de la fecha del $1\text{°}$ pago. 
+
+¿De cuánto debe ser dicho depósito?
+
+\begin{align*}
+&Z\,\text{debe satisfacer:}\: Z(1+i)^n=X \: \text{ó bien} \: Z(1+i)^{n+1} = Y\\
+& \Longrightarrow \: Z= X(1+i)^{-n} = \left[(1+i)^{n-1} + (1+i)^{n-2} + \ldots + (1+i) + 1 \right](1+i)^{-n}\\
+&\hspace{1.5cm} = (1+i)^{-1} +(1+i)^{-2} +\ldots +(1+i)^{-(n-1)} + (1+i)^{-n} = (*) 
+\end{align*}
+
+**Notación**
+
+$(*)=\underbrace{V+V^2+\ldots + V^{n-1}+V^n}_{\scriptstyle n\, \text{sumandos}}$
+
+**En resumen**
+
+1. $X=(1+i)^{n-1}+(1+i)^{n-2}+\ldots+(1+i) +1 \: :$ <span style="color: red;">$\require{enclose}s_{\enclose{actuarial}{n}i}$</span>
+
+2. $Y = (1+i)^n + (1+i)^{n-1}+\ldots+(1+i) \: \: :$ <span style="color: red;">$\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}$</span> 
+
+3. $W = 1 + V + V^2 + \ldots + V^{n-1} \: :$ <span style="color: red;">$\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i}$</span> 
+
+4. $Z = V+V^2+\ldots +V^n \: :$ <span style="color: red;">$\require{enclose}a_{\enclose{actuarial}{n}i}$</span> 
+
+<span style="color: red;">$i \: \longrightarrow  \: \text{tasa efectiva de interés por periodo}\\ n \: \longrightarrow \: \text{número de pagos}$</span> 
+
+$\require{enclose}s_{\enclose{actuarial}{n}i}, \; \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}, \; \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i}, \;\require{enclose}a_{\enclose{actuarial}{n}i}, \; ; n \in \mathbb{N}$
+
+**<span style="color: blue;">Ejercicios</span>**
+
+(2) Se sabe que una inversión de $\$500$ se incrementará a $\$4000$ al final de $30$ años. Encontrar la suma de valores presentes de 3 pagos de $\$10,000$ cada uno, los cuales se harán al final de $20$, $40$ y $60$ años, con la tasa del ejercicio anterior.
+
+<center>
+![](images/26.jpg)
+</center>
+
+\begin{align*}
+\Longrightarrow \: &500(1+i)^{30} = 4000 \: \Longrightarrow \: (1+i)^{30} = 8 \: \Longrightarrow \: i = \ldots \\
+x &= 10,000 V^20 + 10,000 V^40 +10,000 V^60 \\
+&= 10,000\left[(1+i)^{-20} + (1+i)^{-40} + (1+i)^{-60} \right]\\
+&= \underline{10,000\left[8^{-2/3} + 8^{-4/3} + 8^{-2} \right]}\\
+&\hfill \\
+&\text{donde} \: 1+i = 8^{1/30} 
+\end{align*}
+
+(3)  
+
+   a) Encuentre $d_s$ si la tasa de interés simple es $10\%$
+  
+   b) Encuentre $d_s$ si la tasa de descuento simple es $10\%$
+  
+(a) 
+\begin{align*}
+a(t)& = 1+0.1t\\
+ds& = \frac{a(5)-a(4)}{a(5)}\\
+& = \frac{1+0.1(5) -1 -0.1(4)}{1+0.1(4)}\\
+& = \underline{\frac{0.1}{1.5}}
+\end{align*}
+
+(b) Análogo pero con tasa de descuento.
+
+::: {.lemma}
+Para $x\in \mathbb{R}, \, k, \, n \in \mathbb{N}_+, \, k<n$. Sea $S= x^k + x^{k+1} + \ldots + x^n$, entonces
+$$\boxed{S = \frac{x^k-x^{n+1}}{1-x}}$$
+<span style="color: blue;">$\cdot$ Las fórmulas de las anualidades se deducen de este lema.</span> 
+:::
+
+::: {.proof}
+\begin{align*}
+& S = x^k + x^{k+1} + \ldots + x^n \\
+& xS = \hspace{0.5cm} x^{k+1} + \ldots + x^n + x^{n+1} \\
+& \Longrightarrow S-xS = x^k -x^{n+1} \\
+& \Longrightarrow S = \frac{x^k-x^{n+1}}{1-x} 
+\end{align*}
+:::
+
+<center>
+![](images/27.jpg)
+</center>
+
+::: {.proposition}
+.
+
+1) Si $i \neq 0$, entonces
+$\boxed{\require{enclose}a_{\enclose{actuarial}{n}i} = \frac{1-V^n}{i}}  = \frac{1-(1+i)^{-n}}{i}$
+
+2) Si $i \neq 0$, entonces $\boxed{\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} = \frac{1-V^n}{d}}  = \frac{1-(1+i)^{-n}}{d}$, donde $d \sim i$
+
+3) Si $i \neq 0$, entonces $\boxed{\require{enclose}s_{\enclose{actuarial}{n}i} = \frac{(1+i)^n -1}{i}}$
+
+4) Si $i \neq 0$, entonces $\boxed{\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} = \frac{(1+i)^n -1}{d}}$, con $d\sim i$
+
+5) Si $i = 0$, entonces $\require{enclose}a_{\enclose{actuarial}{n}i} = \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} = \require{enclose}s_{\enclose{actuarial}{n}i} = \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i}$
+:::
+
+::: {.proof}
+\begin{align*}
+1) \quad \require{enclose}a_{\enclose{actuarial}{n}i} &= V + V^2 + \ldots + V^n = V^1 + V^2 + \ldots + V^n \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{V^1 - V^{n+1}}{1-V}\\
+&= \frac{V\left(1-V^n\right)}{V\left[(1+i) -1\right]} = \frac{1-V^n}{i}\\
+&\hfill \\
+2) \quad \require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} &= 1 + V + V^2 + \ldots + V^{n-1} = V^0 + V + V^2 + \ldots + V^{n-1} \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{V^0 - V^{n-1+1}}{1-V}\\
+&= \frac{1-V^n}{1-V} \: \ldots \: (\ddot\smile) \quad \text{pero} \, d\sim i, \, (1-d)^{-1} = 1+i \Longrightarrow 1-d = \frac{1}{1+i}\\
+\Longrightarrow \: &d = 1 - \frac{1}{1+i} = 1 - V \: \ldots \: (*)\\
+\text{Sust.}\, &(\ddot\smile) \, \text{en} \, (*)\\
+\require{enclose}\ddot{a}_{\enclose{actuarial}{n}i} &= \frac{1-V^n}{d}\\
+&\hfill \\
+3) \quad \require{enclose}s_{\enclose{actuarial}{n}i} &= 1+(1+i) + \ldots + (1+i)^{n-1} = (1+i)^0 + (1+i)^1 + \ldots + (1+i)^{n-1}\\
+& \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{(1+i)^0 - (1+i)^{n-1+1}}{1-(1+i)} = \frac{1-(1+i)^n}{-i} = \frac{(1+i)^n - 1}{i}\\
+4) \quad \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} &= (1+i) + (1+i)^2 + \ldots +(1+i)^n \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} \frac{(1+i)^1 - (1+i)^{n+1}}{1-(1+i)} \\
+& = \frac{-(1+i)\left[-1 + (1+i)^n \right] }{-i} \: \Longrightarrow \: \require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} = \frac{(1+i)\left[(1+i)^n - 1\right] }{i} \: \ldots \: (<3)\\
+\text{Pero como} &\: i\sim d, \, (1+i)=(1-d)^{-1} \: \Longrightarrow \: d=1- \frac{1}{1+i} = \frac{1+i-1}{1+i} = \frac{i}{1+i}\\
+\Longrightarrow\: \frac{1}{d} &= \frac{1+i}{i} \: \ldots \: (</3)\\
+\text{Sust.}\, (</3) \, &\text{en} \, (<3)\\
+\require{enclose}\ddot{s}_{\enclose{actuarial}{n}i} &= \frac{1}{d}\left[(1+i)^n - 1 \right] = \frac{(1+i)^n-1}{d}\\ 
+&\hfill\\
+5) \quad \require{enclose}s_{\enclose{actuarial}{n}i} &= 1 + (1+i) \ldots + (1+i)^{n-1} = 1+(1+0) + \ldots + (1+0)^{n-1}\\
+&= 1+1\ldots+1=n\\
+\require{enclose}a_{\enclose{actuarial}{n}i} &= V+V^2+\ldots+V^n = (1+i)^{-1} + (1+i)^{-2} +\ldots + (1+i)^{-n}\\
+&\mathrel{\stackrel{\scriptstyle i=1}{=}} 1^{-1} + 1^{-2} + \ldots + 1^{-n} = 1 + \ldots + 1=n
+\end{align*}
+:::
+
+Ahora
+
+\begin{align*}
+\require{enclose} r(Ga)_{\enclose{actuarial}{n}i} &= \underbrace{1V + (1+r)V^2 + (1+r)^2V^3 + \ldots + (1+r)^{n-2}V^{n-1} + (1+r)^{n-1}V^n}_{\scriptstyle n \, \text{sumandos}} \\
+&= V\left[ 1+(1+r)V + [(1+r)V]^2 + \ldots + [(1+r)V]^{n-2} + [(1+r)V]^{n-1}\right]\\
+& \mathrel{\stackrel{\scriptstyle \text{lema}}{=}} V\left[\frac{[(1+r)V]^0 - [(1+r)V]^{n-1+1}}{1-(1+r)V} \right] \: \longleftarrow \: x = (1+r)V\\
+&= V\left[\frac{1-(1+r)^nV^n}{1-(1+r)V} \right] = \frac{1-(1+r)^nV^n}{V^{-1}[1-(1+r)V]} = \frac{1-(1+r)^nV^n}{V^{-1}-(1+r)} \\
+& = \frac{1-(1+r)^n V^n}{(1+i)-(1+r)} = \boxed{\frac{1-\left(\frac{1+r}{1+i} \right)^n }{1-r}, \: i \neq r}\\
+&\hfill\\
+\require{enclose} r(G\ddot{s})_{\enclose{actuarial}{n}i} &\mathrel{\stackrel{\scriptstyle \text{Def}}{=}} (1+r)^{n-1}(1+i) + (1+r)^{n-2}(1+i)^2 + \ldots + (1+r)^2(1+i)^{n-2} \\
+&\quad + (1+r)(1+i)^{n-1} + 1(1+i)^n \\
+&= (1+r)^n \left[\frac{1+i}{1+r} + \left(\frac{1+i}{1+r} \right)^2 + \ldots + \left( \frac{1+i}{1+r} \right)^n  \right] \\
+&\mathrel{\stackrel{\scriptstyle \text{lema}}{=}} (1+r)^n \left[\frac{\left(\frac{1+i}{1+r} \right)^1 - \left( \frac{1+i}{1+r} \right)^{n+1} }{1 - \left(\frac{1+i}{1+r} \right) } \right] \: \longleftarrow \: x = \frac{1+i}{1+r}\\
+& = \frac{(1+r)^n\left( \frac{1+i}{1+r}\right)\left[1 - \left(\frac{1+i}{1+r} \right)^n  \right]  }{\frac{1+r-1-i}{1+r}} = \frac{(1+i)(1+r)^{n-1}\left[1 - \frac{(1+i)^n}{(1+r)^n}  \right] }{\frac{r-i}{1+r}}\\
+&= \frac{(1+i)(1+r)^n\left[1 - \frac{(1+i)^n}{(1+r)^n} \right] }{r-i} = \frac{(1+i)\left[(1+r)^n - (1+i)^n \right] }{r-i}\\
+& = \boxed{\frac{(1+i)^n - (1+r)^n}{\frac{i-r}{1+i}}}
+\end{align*}
+
+<center>
+![](images/28.jpg)
+</center>
+
+::: {.proposition}
+.
+
+1) Si $i\neq r, \:\require{enclose} r(Ga)_{\enclose{actuarial}{n}i} = \frac{1- \left(\frac{1+r}{1+i} \right)^n }{i-r}$
+
+2) Si $i\neq r, \: \require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i} = \frac{1- \left(\frac{1+r}{1+i} \right)^n}{\frac{i-r}{1+i}}$
+
+3) Si $i\neq r, \: \require{enclose} r(Gs)_{\enclose{actuarial}{n}i} = \frac{(1+i)^n - (1+r)^n}{i-r}$
+
+4) Si $i\neq r, \: \require{enclose} r(G\ddot{s})_{\enclose{actuarial}{n}i} = \frac{(1+i)^n - (1+r)^n}{\frac{i-r}{1+i}}$
+
+5) Si $i= r,  \: \require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i} = r(Ga)_{\enclose{actuarial}{n}i} = r(Gs)_{\enclose{actuarial}{n}i} = r(G\ddot{s})_{\enclose{actuarial}{n}i} = n$
+:::
+
+\begin{align*}
+\require{enclose} r(G\ddot{a})_{\enclose{actuarial}{n}i}  &\mathrel{\stackrel{\scriptstyle \text{Def}}{=}} 1 + (1+r)V + (1+r)^2V^2 + \ldots + (1+r)^{n-1}V^{n-1}\\
+&= 1 + \frac{1+r}{1+i} + \left(\frac{1+r}{1+i} \right)^2 + \ldots + \left( \frac{1+r}{1+i} \right)^{n-1}\\
+& \mathrel{\stackrel{\scriptstyle i=r}{=}} 1 + \frac{1+i}{1+i} + \left(\frac{1+i}{1+i} \right)^2 + \ldots + \left(\frac{1+i}{1+i} \right)^n = 1+ \ldots + 1 = n  
+\end{align*}
+
+**<span style="color: blue;">Ejercicios</span>**
+
+1. Supóngase que el incremento del dinero para los siguientes $5$ años está dado a una tasa de descuento del $5\%$.
+
+  a) ¿Cuál es la cantidad de dinero que se debería invertir hoy para tener $\$23,000$ en $3$ años?
+  
+  b) Se desea invertir una cantidad $2$ años, para tener $\$23,000$ en $5$ años ¿Cuál es esa cantidad de dinero?
+  
+<center>
+![](images/29.jpg)
+</center>
+
+<center>
+![](images/30.jpg)
+</center>
+
+2. Regina garantiza un pago de $5,000$ en $4$ años. Ella necesita $\$4,500$ ahora con el fin de pagar su colegiatura. El mejor préstamos para Regina es una tasa de descuento del $4.9\%$ para pagar la cantidad de $\$5,501.62$ en exactamente $4$ años. Ella puede cubrir $\$5,000$ de su pago garantizado y añadir $\$501.62$ extras al final de los $4$ años. Alternativamente, Regina podría vender su pago garantizado y usar la ganancia para cubrir el total de su colegiatura. ¿En cuánto debería estar dispuesta a vender su pago?
+
+<center>
+![](images/31.jpg)
+</center>
+
+\begin{align*}
+&\underline{\text{Primero:}}\\
+& \text{¿Cuál es la i que satisface:}\, 4500(1+i)^4 = 5000 \, \text{?}\\
+&\Longrightarrow\: i = \left(\frac{10}{9} \right)^{1/4} = 0.02669 \: \Longrightarrow \: i = 2.2669\%\\
+&\text{¿Cuál es la tasa de descuento equivalente} \, d^* \, \text{?}\\
+&(1-d^*) = 1+i\\
+&d^* = 1-V = 1 - \frac{1}{1+i} = \frac{i}{1+i} = \frac{0.02669}{1.02669} = 0.025\\
+&\Longrightarrow\: \underline{d>d^*} 
+\end{align*}

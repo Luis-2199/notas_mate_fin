@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Matemáticas Financieras</title>
+  <meta name="description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Matemáticas Financieras" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Matemáticas Financieras" />
+  
+  <meta name="twitter:description" content="Estas son notas creadas para el apoyo del curso de matemáticas financieras" />
+  
+
+<meta name="author" content="Eduardo Selim Martinez Mayorga" />
+
+
+<meta name="date" content="2022-02-21" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Matemáticas Financieras</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path=""><a href="#teoría-del-interés"><i class="fa fa-check"></i><b>1</b> Teoría del interés</a><ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#section"><i class="fa fa-check"></i><b>1.1</b> 1</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Matemáticas Financieras</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Matemáticas Financieras</h1>
+<p class="author"><em>Eduardo Selim Martinez Mayorga</em></p>
+<p class="date"><em>2022-02-21</em></p>
+</div>
+<div id="teoría-del-interés" class="section level1">
+<h1><span class="header-section-number">Capítulo 1</span> Teoría del interés</h1>
+<div class="definition">
+<p><span id="def:unlabeled-div-1" class="definition"><strong>Definición 1.1  (Definición de Interés) </strong></span>El interés se puede definir como una compensación/beneficio que una parte A le da a una parte B por dejar de satisfacer una necesidad para que el otro satisfaga la propia.</p>
+</div>
+<p>Solo pensando en términos monetarios… ¿Por qué las inversiones (en teoría ) crecen?
+Algunos factores que intervienen en una inversión:</p>
+<ul>
+<li>Dinero (¿cuánto tiempo?)</li>
+<li>¿En qué se invierte?</li>
+<li>¿Cuánto tiempo lo invierto?</li>
+<li>Inflación</li>
+<li>Bajo que condiciones contractuales lo invierto (¿cómo crece el dinero ?)</li>
+<li>Oferta y demanda</li>
+<li>¿Cuándo lo invierto?</li>
+</ul>
+<p>Por un momento(grande) pensemos que el nivel de inversión depende solo del tiempo.</p>
+<div class="theorem">
+<p><span id="thm:unlabeled-div-2" class="theorem"><strong>Teorema 1.1  </strong></span>Se dice que una función <span class="math inline">\(a:\left[ 0,\infty \right) \longrightarrow \mathbb{R}\)</span> es una función de acumulación si cumple:</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(a(0) = 1\)</span></li>
+<li><span class="math inline">\(a\left(\cdot\right)\)</span> es no-decreciente</li>
+<li><span class="math inline">\(a(\cdot)\)</span> es continua por la derecha y con límite por la izquierda.</li>
+</ol>
+<p><span class="math inline">\(a(t)\)</span> representa el valor acumulado de <span class="math inline">\(\$1\)</span> que hay durante un lapso de tiempo t.</p>
+</div>
+<div class="example">
+<p><span id="exm:unlabeled-div-3" class="example"><strong>Ejemplo 1.1  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(a(t) = 1+ct\)</span>, <span class="math inline">\(c&gt;0\)</span>, <span class="math inline">\(c\)</span> constante (interés simple)</p></li>
+<li><p><span class="math inline">\(a(t) = e^{\alpha t}\)</span>, <span class="math inline">\(\alpha &gt; 0\)</span> (interés compuesto)</p></li>
+<li><p><span class="math inline">\(a(t) = ct^2 + 1\)</span>, <span class="math inline">\(c&gt;0\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = 1\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = (1+t)^c\)</span>, $c&gt;0</p></li>
+<li><p><span class="math inline">\(a(t) = 1 + arctang(t)\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = \sqrt{t+1}\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = \sqrt{t} + 1\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = 1 + c\left[ t \right]\)</span></p></li>
+<li><p><span class="math inline">\(a(t) = e^{\left[ t \right]}\)</span></p></li>
+</ol>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-4" class="definition"><strong>Definición 1.2  </strong></span>Se define la <strong>función de monto</strong> correspondiente a <span class="math inline">\(a(t)\)</span> como un capital inicial <span class="math inline">\(k&gt;0\)</span>, como
+<span class="math display">\[ A_k \left( t \right) : = k \cdot a \left( t\right)\]</span></p>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-5" class="remark"><em>Observación</em>. </span>Se cumple (1) y (3), pero <span class="math inline">\(A_k(0) = k \cdot a(0) = k \cdot 1 = k\)</span></p>
+</div>
+<p><span class="math inline">\(A_k(t)\)</span> representa el valor acumulado de una inversión de un lapso de tiempo t.</p>
+<p><strong>Representación gráfica</strong></p>
+<p><img src="1.jpg" /></p>
+<p>¿Cómo medimos el performance de una función de acumulación o función de monto?</p>
+<p>Estudiaremos 3 indicadores:</p>
+<ol style="list-style-type: decimal">
+<li>Tasa efectiva de interés al tiempo t</li>
+<li>Tasa de descuento al tiempo t</li>
+<li>Fuerza de interés</li>
+</ol>
+<div class="definition">
+<p><span id="def:unlabeled-div-6" class="definition"><strong>Definición 1.3  </strong></span>Para una función de acumulación <span class="math inline">\(a\left( \cdot \right)\)</span> se define la tasa efectiva de  como:
+<span class="math display">\[ i_t := \frac{a\left( t \right) - a\left( t -1 \right)}{a\left( t - 1 \right)}\]</span></p>
+</div>
+<p><strong>Interpretación:</strong> Por cada peso invertida al tiempo <span class="math inline">\(t-1\)</span> hay <span class="math inline">\(i_t\)</span> unidades de ganancia. “Lo que yo gané por cada peso que invertí”.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-7" class="example"><strong>Ejemplo 1.2  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><p>Para <span class="math inline">\(a(t) = 1 + ct\)</span>
+<span class="math inline">\(i_t = \frac{a\left( t \right) - a\left( t -1 \right)}{a\left( t - 1 \right)} = \frac{1 + ct - \left[ 1 + c(t-1)\right] }{1+c(t-1)} = \frac{c}{1+c(t-1)}\)</span>
+Obsérvese que la aplicación <span class="math inline">\(t \longmapsto i_t = \frac{c}{1+c(t-1)}\)</span> es <strong>decreciente</strong>.
+Con la función <span class="math inline">\(a(t) = 1 + ct\)</span> ganamos, pero cada vez menos conforme el tiempo avanza.</p></li>
+<li><p>Para <span class="math inline">\(a(t) = e^{\alpha t}\)</span>, <span class="math inline">\(\alpha &gt; 0\)</span>
+<span class="math inline">\(i_t = \frac{a\left( t \right) - a\left( t -1 \right)}{a\left( t - 1 \right)} = \frac{e^{\alpha t} - e^{\alpha (t-1)}}{e^{\alpha (t-1)}} = \frac{e^{\alpha (t-1)}\left[ e^{\alpha}-1\right]}{e^{\alpha (t-1)}} = e^{\alpha} -1\)</span>
+Obsérvese que la aplicación <span class="math inline">\(t \longmapsto i_t = e^{\alpha} -1\)</span> es <strong>constante</strong>.</p></li>
+</ol>
+<p><span style="color: red;">tarea</span></p>
+<p>Para <span class="math inline">\(a(t)= e^{t^2}\)</span> calcular <span class="math inline">\(i_t\)</span> y ver si <span class="math inline">\(t \longmapsto i_t\)</span> es creciente o decreciente</p>
+<ol start="3" style="list-style-type: decimal">
+<li><span class="math inline">\(a(t) = (1+c)^t\)</span>, <span class="math inline">\(c &gt; 0\)</span>
+<span class="math inline">\(i_t = \frac{a\left( t \right) - a\left( t -1 \right)}{a\left( t - 1 \right)} = \frac{(1+c)^t - (1+c)^{t-1}}{(1+c)^{t-1}} = \frac{(1+c)^{t-1}[(1+c)-1]}{(1+c)^{t-1}} = 1+c-1 = c\)</span>
+Obsérvese que la aplicación <span class="math inline">\(t \longmapsto i_t = e^{\alpha} -1\)</span> es <strong>constante</strong>.</li>
+</ol>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-8" class="remark"><em>Observación</em>. </span>Los ejemplos 2 y 3 son los mismos
+<span class="math inline">\((1+c)^t=e^{log\left((1+c)^t \right)} = e^{tlog(1+c)}=e^{\alpha t}\)</span>, con <span class="math inline">\(\alpha = log(1+c)\)</span>.</p>
+<p>En el mundo financiero preferimos escribir a la función exponencial como <span class="math inline">\((1+c)^t\)</span>.</p>
+</div>
+<p><strong><span style="color: blue;">Notación</span></strong></p>
+<p>En realidad preferimos escribir a la función exponencial como <span class="math inline">\(a(t) = (1+i)^t\)</span>. Bajo esta notación <span class="math inline">\(i_t = c = i\)</span>, es decir, <span class="math inline">\(i_t=i\)</span>.</p>
+<p>Al número “<span class="math inline">\(i\)</span>” le llamamos <span style="color: blue;">tasa efectiva de interés</span>, y al modelo <span class="math inline">\(a(t)=(1+i)^t\)</span> se le conoce como el <span style="color: blue;">modelo de interés compuesto.</span>.</p>
+<div class="remark">
+<p><span id="unlabeled-div-9" class="remark"><em>Observación</em>. </span><span class="math inline">\(\frac{A_k(t)-A_k(t-1)}{A_k(t-1)}=\frac{ka(t) - ka(t-1)}{ka(t-1)} = \frac{a(t)-a(t-1)}{a(t-1)} = i_t\)</span></p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-10" class="definition"><strong>Definición 1.4  </strong></span>Para una función de acumulación <span class="math inline">\(a(t)\)</span> diferenciable, se define la  correspondiente a <span class="math inline">\(a(\cdot)\)</span> como</p>
+</div>
+<p><span class="math display">\[\begin{equation*}
+\boxed{
+\delta_t : = \frac{\frac{\partial}{\partial t} a(t)}{a(t)}
+}\end{equation*}\]</span></p>
+<p>¿De dónde viene esa definición?</p>
+<p><img src="2.jpg" /></p>
+<div class="remark">
+<p><span id="unlabeled-div-11" class="remark"><em>Observación</em>. </span><span class="math inline">\(\delta_t\)</span> también se puede obtener como <span class="math inline">\(\frac{\partial}{\partial t} log(a(t)) = \frac{a&#39;(t)}{a(t)} = \delta_t\)</span></p>
+</div>
+<!-- Aquí -->
+<div class="example">
+<p><span id="exm:unlabeled-div-12" class="example"><strong>Ejemplo 1.3  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(a(t)=e^{\alpha t}\)</span></li>
+</ol>
+<p><span class="math inline">\(\delta_t = \frac{a&#39;(t)}{a(t)} = \frac{\left( e^{\alpha t}\right)&#39;}{e^{\alpha t}} = \frac{\alpha e^{\alpha t}}{e^{\alpha t}} = \alpha\)</span></p>
+<p><span class="math inline">\(\therefore \delta_t = \alpha\)</span>, con <span class="math inline">\(\alpha\)</span> constante</p>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math inline">\(a(t) = 1+ct\)</span></li>
+</ol>
+<p><span class="math inline">\(\delta_t = \frac{a&#39;(t)}{a(t)} = \frac{\left( 1+ct\right)&#39;}{1+ct} = \frac{c}{1+ct}\)</span></p>
+<p><span class="math inline">\(\therefore t\longmapsto \delta_t\)</span> es decreciente</p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-13" class="definition"><strong>Definición 1.5  </strong></span>Para una función de acumulación <span class="math inline">\(a(\cdot )\)</span> se define la <span style="color: blue;">tasa efectiva de descuento al tiempo t</span> como:
+<span class="math display">\[\begin{equation*}
+\boxed{d_t := \frac{a(t)-a(t-1)}{a(t)}}
+\end{equation*}\]</span></p>
+</div>
+<p>También se conoce como tasa efectiva de descuento en el intervalo <span class="math inline">\(\left[ t-1, t\right]\)</span>. ¿Cómo se interpreta <span class="math inline">\(d_t\)</span>?</p>
+<p>Por cada unidad de <span class="math inline">\(a(t)\)</span> hay <span class="math inline">\(d_t\)</span> unidades de <span class="math inline">\(a(t)-a(t-1)\)</span>. “Por cada peso obtenido hay <span class="math inline">\(d_t\)</span> pesos de ganancia obtenida”.</p>
+<div class="example">
+<p><span id="exm:unlabeled-div-14" class="example"><strong>Ejemplo 1.4  </strong></span>.</p>
+<ol style="list-style-type: decimal">
+<li><span class="math inline">\(a(t) = (1+i)^t\)</span></li>
+</ol>
+<p><span class="math inline">\(d_t = \frac{a(t) - a(t-1)}{a(t)} = \frac{(1+i)^t - (1+i)^{t-1}}{(1+i)^t} = 1 - (1+i)^{-1} = \frac{1+i-1}{1+i} = \frac{i}{1+i} = c\)</span></p>
+<p>donde <span class="math inline">\(c\)</span> es una constante</p>
+<ol start="2" style="list-style-type: decimal">
+<li><span class="math inline">\(a(t) = 1+it\)</span></li>
+</ol>
+<p><span class="math inline">\(d_t = \frac{a(t) - a(t-1)}{a(t)} = \frac{1 + it - (1 + i(t - 1))}{i + it} = \frac{i}{1 + it}\)</span></p>
+</div>
+<div class="remark">
+<p><span id="unlabeled-div-15" class="remark"><em>Observación</em>. </span>La aplicación <span class="math inline">\(t \longmapsto d_t = \frac{i}{1 + it}\)</span> es <strong>decreciente</strong>.</p>
+</div>
+<ol style="list-style-type: decimal">
+<li>Supongamos que un banco le ofrece darte un porcentaje <span class="math inline">\(c\)</span> por cada cada peso invertido al final de cada periodo, <strong>sin</strong> posibilidad de reinvertir las ganancias.</li>
+</ol>
+<p>¿Cuánto dinero tendré al final de <span class="math inline">\(n\)</span> periodos? Supongamos que hoy invertimos <span class="math inline">\(K\)</span>.</p>
+<p><span class="math inline">\(\longrightarrow\)</span> ¿Cuánto dinero tendré al final de 1 periodo?
+<span class="math display">\[  \underbrace{K}_{\text{Inicial}} + \underbrace{Kc}_{\text{Ganancia}} = K(1+c)\]</span></p>
+<p><span class="math inline">\(\longrightarrow\)</span> ¿Cuánto dinero tendrá al final de 2 periodos?
+<span class="math display">\[ \underbrace{K(1+c)}_{\text{Ya lo tenía}} + \underbrace{Kc}_{\text{Ganancia}} = K(1+2c)\]</span></p>
+<p>Inductivamente, el dinero al final de <span class="math inline">\(n\)</span> periodos es <span class="math inline">\(K(1+n\cdot c)\)</span>, <span class="math inline">\(n\in \mathbb{N}_+\)</span>.</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Ahora, con la posibilidad de reinvertir las ganancias:</li>
+</ol>
+<p>Supóngase que un banco le ofrece darle un porcentaje por cada peso invertido al final de cada periodo <strong>con</strong> posibilidad de reinvertir las ganancias.</p>
+<p><span class="math inline">\(\longrightarrow\)</span> ¿Cuánto dinero tendré al final de 2 periodos?
+<span class="math display">\[ \underbrace{K(1+c)}_{\text{Ya lo tenía}} + \underbrace{K(1+c)\cdot c}_{\text{Ganancia}} = K(1+c)(1+c) = K(1+c)^2\]</span></p>
+<p><span class="math inline">\(\longrightarrow\)</span> ¿Cuánto dinero tendré al final de 3 periodos?
+<span class="math display">\[ \underbrace{K(1+c)^2}_{\text{Ya lo tenía}} + \underbrace{[K(1+c)^2]c}_{\text{Ganancia}} = K(1+c)^2(1+c) = K(1+c)^3\]</span></p>
+<p>Inductivamente el dinero al final de <span class="math inline">\(n\)</span> periodos es <span class="math inline">\(k(1+c)^n\)</span>, <span class="math inline">\(n\in \mathbb{N}_+\)</span>.</p>
+<p><span class="math inline">\(\longrightarrow\)</span> A 1. se le conoce como la <strong><span style="color: blue;">génesis económica del interés simple</span></strong>, <span class="math inline">\(a(n) = 1+cn\)</span>, y nos gusta escribirla como <span class="math inline">\(a(n) = 1+in\)</span>, donde a <span class="math inline">\(i\)</span> se le llama <span style="color: blue;">tasa efectiva de interés simple.</span></p>
+<p><span class="math inline">\(\longrightarrow\)</span> A 2. se le conoce como <strong><span style="color: blue;">génesis económica del interés compuesto</span></strong>, <span class="math inline">\(a(n) = (1+c)^n\)</span>, y nos gusta escribirla como <span class="math inline">\(a(n) = (1+i)^n\)</span>, donde a <span class="math inline">\(i\)</span> se le conoce como <span style="color: blue;">tasa efectiva de interés.</span></p>
+<div class="definition">
+<p><span id="def:unlabeled-div-16" class="definition"><strong>Definición 1.6  </strong></span>Se dice que una función de acumulación <span class="math inline">\(a(\cdot )\)</span> es un <strong><span style="color: blue;">modelo de interés simple</span></strong> si cumple las siguientes características:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(a(1) = 1+ i\)</span>, para <span class="math inline">\(i\)</span> constante</p></li>
+<li><p><span class="math inline">\(a(\cdot)\)</span> es diferenciable</p></li>
+<li><p><span class="math inline">\(\forall s,t \in \left[0,\infty \right) \quad a(t+s)+1 = a(t) + a(s) \ldots (Ü)\)</span></p></li>
+</ol>
+</div>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-17" class="proposition"><strong>Proposición 1.1  </strong></span>Si <span class="math inline">\(a(\cdot)\)</span> es una función de acumulación que es un modelo de interés simple, entonces <span class="math inline">\(a(t) = 1 + it \quad \forall t\in \left[0,\infty \right)\)</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-18" class="proof"><em>Demostración</em>. </span><span class="math display">\[\begin{align*}
+a&#39;(u) &amp;= \lim\limits_{h \to 0} \frac{a(u+h)-a(u)}{h} \longleftarrow \, \text{Existe por (2)} \\
+&amp;\stackrel{(Ü)}{=} \lim\limits_{h \to 0} \frac{\left(a(u)+a(h)-1 \right) - a(u)}{h}\\
+&amp;= \lim\limits_{h \to 0} \frac{a(h)-1}{h}\\
+&amp;= \lim\limits_{h \to 0} \frac{a(h)-a(0)}{h}\, \text{, pues} \, a(\cdot) \, \text{es función de acumulación}\\
+&amp;= a&#39;(0) = \text{cte} \, \text{con respecto a t.}
+\end{align*}\]</span></p>
+<p>Es decir, <span class="math inline">\(a&#39;(u) = a&#39;(0)\Longrightarrow \int_{0}^{t}a&#39;(u)\,du = \int_{0}^{t}a&#39;(0)\,du\)</span>
+<span class="math display">\[\begin{align*}
+&amp;\stackrel{TFC}{\Longrightarrow} a(t) - a(0) = a&#39;(0)\cdot t\\
+&amp;\Longrightarrow a(t) - 1 = a&#39;(0)\cdot t\\
+&amp;\Longrightarrow a(t) = 1 + a&#39;(0)t \ldots (*)\\
+\text{Pero por (1)} \, &amp;\Longrightarrow a(1) = 1+i = 1 + a&#39;(0)\cdot 1\\
+&amp; \Longrightarrow a&#39;(0) = i
+\end{align*}\]</span>
+Sustituimos en <span class="math inline">\((*)\)</span>
+<span class="math display">\[\therefore \, a(t) = 1+it\]</span></p>
+</div>
+<div class="definition">
+<p><span id="def:unlabeled-div-19" class="definition"><strong>Definición 1.7  </strong></span>Se dice que una función de acumulación <span class="math inline">\(a(\cdot)\)</span> es un <strong><span style="color: blue;">modelo de interés compuesto</span></strong> si cumple las siguientes características:</p>
+<ol style="list-style-type: decimal">
+<li><p><span class="math inline">\(a(1) = 1+i\)</span>, para <span class="math inline">\(i\)</span> constante</p></li>
+<li><p><span class="math inline">\(a(\cdot)\)</span> es diferenciable</p></li>
+<li><p><span class="math inline">\(\forall s,t \in \left[0,\infty \right) \quad a(t+s)= a(t)\cdot a(s) \ldots (\ddot\smile)\)</span></p></li>
+</ol>
+</div>
+<div class="proposition">
+<p><span id="prp:unlabeled-div-20" class="proposition"><strong>Proposición 1.2  </strong></span>Si <span class="math inline">\(a(\cdot)\)</span> es una función de acumulación que es un modelo de interés compuesto, entonces <span class="math inline">\(a(t) = (1+i)^t \quad \forall t\in \left[0,\infty \right)\)</span></p>
+</div>
+<div class="proof">
+<p><span id="unlabeled-div-21" class="proof"><em>Demostración</em>. </span><span class="math display">\[\begin{align*}
+a&#39;(u) &amp;= \lim\limits_{h \to 0} \frac{a(u+h)-a(u)}{h} \longleftarrow \, \text{Existe por (2)} \\
+&amp;\stackrel{(\ddot\smile)}{=} \lim\limits_{h \to 0} \frac{a(u)\cdot a(h) - a(u)}{h}\\
+&amp;=  a(u) \cdot \lim\limits_{h \to 0} \frac{a(h)-1}{h}\\
+&amp;=  a(u) \cdot \lim\limits_{h \to 0} \frac{a(h)-a(0)}{h}\, \text{, pues} \, a(\cdot) \, \text{es función de acumulación}\\
+&amp;= a(u)\cdot a&#39;(0)
+\end{align*}\]</span>
+<span class="math display">\[\therefore \, a&#39;(u) = a(u) \cdot a&#39;(0) \Longrightarrow \frac{a&#39;(u)}{a(u)} = a&#39;(0)\]</span></p>
+<p><span class="math display">\[\Longrightarrow \int_{0}^{t}\frac{a&#39;(u)}{a(u)}\, du = \int_{0}^{t} a&#39;(0)\, du \Longrightarrow \int_{0}^{t} \frac{\partial}{\partial t} log(a(u)) \, du = a&#39;(0)t\]</span>
+<span class="math display">\[\begin{align*}
+&amp;\stackrel{\text{TFC}}{\Longrightarrow} log(a(t)) - log(a(0)) = a&#39;(0)t\\
+&amp;\Longrightarrow log(a(t)) - \cancelto{0}{log(1)} = a&#39;(0)t\\
+&amp;\Longrightarrow a(t) = exp\{a&#39;(0)t\} \ldots (\text{\ding{164}})
+\end{align*}\]</span>
+Pero por (1), <span class="math inline">\(a(1) = 1+i\)</span></p>
+<p>Sustituimos en ()
+<span class="math display">\[\begin{align*}
+&amp;1+i = exp\{a&#39;(0)\cdot 1\} \\
+&amp;\Longrightarrow log(1+i) = a&#39;(0) \ldots (\#)\\
+&amp;\text{Sustituyendo}\,(\#)\, \text{en} \, (\text{\ding{164}})\\
+&amp; \Longrightarrow a(t) = exp\{log(1+i)\cdot t\}\\
+&amp; \Longrightarrow a(t) = exp\{log(1+i)^t\}\\
+&amp; \therefore \, a(t) = (1+i)^t
+\end{align*}\]</span></p>
+</div>
+<div id="section" class="section level2">
+<h2><span class="header-section-number">1.1</span> 1</h2>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/USERNAME/REPO/edit/BRANCH/%s",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": false,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+# Bookdown
+::: {.theorem}
+
+:::
+
+::: {.proposition}
+
+:::
+
+::: {.lemma}
+
+:::
+
+::: {.proof}
+
+:::
+
+::: {.def}
+
+:::
+
+::: {.remark}
+
+:::
+
+::: {.example}
+
+:::
+
+<center>
+![](images/•.jpg)
+</center>
+
+## Color
+**<span style="color: red;">•</span>**
+**<span style="color: blue;">•</span>**
+
+
+# LateX
+\dpartial{s} = \frac{\partial}{\partial t}
+\integral[4] = \int_{#1}^{#2} #3 \, d#4
+\deriv[1] = \frac{d}{d #1}
+\stackrel{|}{•-}
