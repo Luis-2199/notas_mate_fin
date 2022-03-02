@@ -1,4 +1,6 @@
+book_filename: "bookdown_mate_fin"
 delete_merged_file: true
+output_dir: "docs"
 language:
   label:
     fig: 'Figura '
